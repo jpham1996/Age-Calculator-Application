@@ -1,0 +1,39 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    padding-top: 20px;
+    height: 100px;
+}
+
+#age-form {
+    border: 10px solid pink;
+    height: inherit;
+    text-align: center;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+}
+
+input {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    right: 3.4rem;
+}
+
+button {
+    display: block;
+}
