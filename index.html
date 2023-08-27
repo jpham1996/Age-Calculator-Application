@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator Application</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator Application App</title>
     <link href="app.css" type="text/css" rel="stylesheet" />
-
-</head>
-<body>
-    <h1>Age Calculator</h1>
-    <hr>
-    <div class="form-container">
-        <form id="age-form">
-            <label for="month">Month:</label>
-                <input id="month" name="date" type="text" placeholder="mm"/>
-            <label for="day">Day:</label>
-                <input id="day" name="day" type="text" placeholder="dd"/>
-            <label for="year">Year:</label>
-                <input id="year" name="year" type="text" placeholder="yyyy" />
-
-            <button type="submit">Submit</button>
-        </form>
-
-    </div>
-    <p class="output">
-        
-    </p>
-
+  </head>
+  <body>
+    <h1 class="title">Age Calculator App</h1>
+    <hr />
+    <form id="age__form">
+      <div class="container">
+        <div class="row">
+          <label for="month"
+            >Month:
+            <input
+              id="month"
+              name="date"
+              type="text"
+              placeholder="mm"
+              required
+            />
+          </label>
+          <label for="day"
+            >Day:
+            <input id="day" name="day" type="text" placeholder="dd" required />
+          </label>
+          <label for="year"
+            >Year:
+            <input
+              id="year"
+              name="year"
+              type="text"
+              placeholder="yyyy"
+              required
+            />
+          </label>
+        </div>
+        <ul class="error"></ul>
+        <div>
+          <button class="age__calculate" type="submit">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <div class="age__result"></div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
-
