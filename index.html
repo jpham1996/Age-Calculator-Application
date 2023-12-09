@@ -7,40 +7,27 @@
     <link href="app.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="title">Age Calculator App</h1>
+    <h1>Age Calculator App</h1>
     <hr />
     <form id="age__form">
-      <div class="container">
-        <div class="row">
-          <label for="month"
-            >Month:
-            <input
-              id="month"
-              name="date"
-              type="text"
-              placeholder="mm"
-              required
-            />
-          </label>
-          <label for="day"
-            >Day:
-            <input id="day" name="day" type="text" placeholder="dd" required />
-          </label>
-          <label for="year"
-            >Year:
-            <input
-              id="year"
-              name="year"
-              type="text"
-              placeholder="yyyy"
-              required
-            />
-          </label>
-        </div>
-        <ul class="error"></ul>
-        <div>
-          <button class="age__calculate" type="submit">Calculate</button>
-        </div>
+      <div class="container row">
+        <label for="month"
+          >Month:
+          <input id="month" name="date" type="text" placeholder="mm" />
+        </label>
+        <p class="errorMessageMonth"></p>
+        <label for="day"
+          >Day:
+          <input id="day" name="day" type="text" placeholder="dd" />
+        </label>
+        <p class="errorMessageDay"></p>
+        <label for="year"
+          >Year:
+          <input id="year" name="year" type="text" placeholder="yyyy" />
+        </label>
+        <p class="errorMessageYear"></p>
+
+        <button class="age__calculate" type="submit">Calculate</button>
       </div>
     </form>
     <div class="age__result"></div>
