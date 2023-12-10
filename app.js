@@ -55,16 +55,6 @@ function errorValidations() {
 }
 
 function calculateAge() {
-  // if (dayInput.value > currentDay) {
-  //   currentDay += daysPerMonth[currentMonth - 1];
-  //   currentMonth -= 1;
-  // }
-
-  // if (monthInput.value > currentMonth) {
-  //   currentMonth += 12;
-  //   currentYear -= 1;
-  // }
-
   const ageDay = currentDay - dayInput.value;
   const ageMonth = currentMonth - monthInput.value;
   const ageYear = currentYear - yearInput.value;
@@ -81,6 +71,10 @@ form.addEventListener("submit", function (e) {
 
   errorValidations();
   calculateAge();
+
+  monthInput.value = "";
+  dayInput.value = "";
+  yearInput.value = "";
 });
 
 // Leap Year
