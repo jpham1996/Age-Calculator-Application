@@ -10,8 +10,8 @@ body {
   font-size: 1.2rem;
 }
 
-#age__form {
-  padding: 1em;
+h1 {
+  margin-bottom: 0;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
 }
 
 input {
-  margin-top: 5px;
+  margin-top: 0.313em;
   display: block;
   text-align: center;
 }
