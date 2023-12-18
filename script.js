@@ -39,33 +39,36 @@ function checkValidations() {
   const day = Number(dayInput.value);
   const month = Number(monthInput.value);
   const year = Number(yearInput.value);
+
   isValid = true;
 
   if (isLeapYear(year) && month === 2) {
     febDaysLimit = 29;
   }
+
   if (day > febDaysLimit || day === 0 || day > 31 || dayInput.value === "") {
     errorMessageDayText.innerText = "Please enter a valid day";
     isValid = false;
   } else {
     errorMessageDayText.innerText = "";
-    isValid = true;
   }
+
+  console.log(isValid);
 
   if (month > 12 || month === 0 || monthInput.value === "") {
     errorMessageMonthText.innerText = "Please enter a month between 1 and 12";
     isValid = false;
   } else {
     errorMessageMonthText.innerText = "";
-    isValid = true;
   }
+
+  console.log(isValid);
 
   if (year > currentYear || yearInput.value === "") {
     errorMessageYearText.innerText = `Please enter a year between 0 and ${currentYear}`;
     isValid = false;
   } else {
     errorMessageYearText.innerText = "";
-    isValid = true;
   }
 }
 
