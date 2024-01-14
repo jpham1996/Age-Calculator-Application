@@ -48,6 +48,7 @@ input {
   padding-bottom: 0.625em;
   background-color: darkblue;
   color: white;
+  cursor: pointer;
 }
 
 .age__result {

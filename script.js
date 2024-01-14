@@ -53,16 +53,12 @@ function checkValidations() {
     errorMessageDayText.innerText = "";
   }
 
-  console.log(isValid);
-
   if (month > 12 || month === 0 || monthInput.value === "") {
     errorMessageMonthText.innerText = "Please enter a month between 1 and 12";
     isValid = false;
   } else {
     errorMessageMonthText.innerText = "";
   }
-
-  console.log(isValid);
 
   if (year > currentYear || yearInput.value === "") {
     errorMessageYearText.innerText = `Please enter a year between 0 and ${currentYear}`;
